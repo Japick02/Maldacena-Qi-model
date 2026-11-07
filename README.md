@@ -4,7 +4,7 @@ In this project I developed a numerical solver for the large-N Schwinger-Dyson e
 
 I used the solvers to compute the large-N Free energy through saddle-point solutions as a function of the temperature.
 
-All the code is based on GPU acceleration achieved through CuPy library and it has been tested on Nvidia RTX 5070.
+All the code is based on GPU acceleration, achieved through CuPy library and it has been tested on Nvidia RTX 5070.
 
 ## Notebooks
 
@@ -41,13 +41,13 @@ Numerical solver for large-N Schwinger-Dyson equations of MQ model.
 
 **File:** [Free_energy_MQ.ipynb](Free_energy_MQ.ipynb)
 
-Computation of Free Energy as a function of the temperature.
+Computation of Free Energy as a function of the temperature and characterization of first order phase transition between two black holes phase and wormhole phase.
 
 <p align="center">
   <img src="figures/Hysteresis_conf.png" width="60%" alt="Hysteresis_conf">
 </p>
 
-I used the notebook to collect data points and plot the Phase Diagram.
+I used the notebook to collect data points and plot the Phase Diagram in $mu - T$ plane.
 
 <p align="center">
   <img src="figures/Phase_diagram.png" width="60%" alt="Phase_diagram">
