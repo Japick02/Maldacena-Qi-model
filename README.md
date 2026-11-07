@@ -23,7 +23,26 @@ Numerical solver for large-N Schwinger-Dyson equations of SYK model.
 Computation of Free Energy as a function of the temperature.
 
 <p align="center">
-  <img src="figures/" width="60%" alt="SYK_SFF">
+  <img src="figures/Free_energy_SYK.png" width="60%" alt="Free_energy_SYK">
 </p>
 
-**References:** 
+**References:** J. Maldacena, D. Stanford. *Comments on the Sachdev-Ye-Kitaev model* (2016): [arXiv:1604.07818](https://arxiv.org/abs/1604.07818)
+
+### 2. MQ SD solver and Free Energy computation
+**File:** [SYK_SD.ipynb](SYK_SD.ipynb)
+
+Numerical solver for large-N Schwinger-Dyson equations of MQ model.
+
+<p align="center">
+  <img src="figures/Green_high_temp_MQ.png" width="48%" alt="Green_high_temp_MQ">
+  <img src="figures/Green_low_temp_MQ.png" width="48%" alt="Green_low_temp_MQ">
+</p>
+
+
+Computation of Free Energy as a function of the temperature.
+
+<p align="center">
+  <img src="figures/Hysteresis_conf.png" width="60%" alt="Hysteresis_conf">
+</p>
+
+**References:** J. Maldacena, X.-L. Qi. *Eternal traversable wormhole* (2018): [arXiv:1804.00491](https://arxiv.org/abs/1804.00491)
