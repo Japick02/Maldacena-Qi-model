@@ -1,10 +1,10 @@
 # Maldacena-Qi model
 
-In this project I developed a numerical solver for the large-N Schwinger-Dyson equations of SYK and Maldacena-Qi models. The latter is obtained with two SYK models interacting. 
+In this project I developed a numerical solver for the large-N Schwinger-Dyson equations of SYK and Maldacena-Qi models. The latter consists of two coupled SYK systems. Such solver is based on an iterative method. It makes use of Fast Fourier Transform and numerical techniques to deal with Gibbs problem and aliasing, arising from non-linearity of the equations.
 
-I used the solvers to compute the large-N Free energy through saddle-point solutions as a function of the temperature.
+I used the solvers to compute the large-N Free energy through saddle-point solutions as a function of the temperature. For what concerns MQ model, I simulated the cooling and a successive reheating of the system to reproduce the hysteresis cycle.  
 
-All the code is based on GPU acceleration, achieved through CuPy library and it has been tested on Nvidia RTX 5070.
+All the code is based on GPU acceleration, achieved using the CuPy library and it has been tested on NVIDIA RTX 5070.
 
 ## Notebooks
 
@@ -30,7 +30,7 @@ Computation of Free Energy as a function of the temperature.
 **References:** J. Maldacena, D. Stanford. *Comments on the Sachdev-Ye-Kitaev model* (2016): [arXiv:1604.07818](https://arxiv.org/abs/1604.07818)
 
 ### 2. MQ SD solver and Free Energy computation
-**File:** [SYK_SD.ipynb](SYK_SD.ipynb)
+**File:** [MQ_SD.ipynb](MQ_SD.ipynb)
 
 Numerical solver for large-N Schwinger-Dyson equations of MQ model. This is based on the SYK one.
 
@@ -41,17 +41,26 @@ Numerical solver for large-N Schwinger-Dyson equations of MQ model. This is base
 
 **File:** [Free_energy_MQ.ipynb](Free_energy_MQ.ipynb)
 
-Computation of Free Energy as a function of the temperature and characterization of first order phase transition between two black holes phase and wormhole phase.
+Computation of Free Energy as a function of the temperature and characterization of first order phase transition between two-black-holes phase and wormhole phase. I used the solution at each step to find a conformal guess to initialize the iterative algorithm for the next one.
 
 <p align="center">
   <img src="figures/Hysteresis_conf.png" width="60%" alt="Hysteresis_conf">
 </p>
 
-I used the notebook to collect data points and plot the Phase Diagram in $mu - T$ plane.
+I used the notebook to collect data points and plot the Phase Diagram in $\mu - T$ plane.
 
-<p align="center">
-  <img src="figures/Phase_diagram.png" width="60%" alt="Phase_diagram">
-</p>
+<table>
+  <tr>
+    <td width="60%">
+      <img src="figures/Phase_diagram.png" width="100%" alt="Phase_diagram">
+    </td>
+    <td width="40%">
+      <p>
+       Black solid lines denote the coexistence region. Pink line denotes the critical temperature. 
+      </p>
+    </td>
+  </tr>
+</table>
 
 **References:** J. Maldacena, X.-L. Qi. *Eternal traversable wormhole* (2018): [arXiv:1804.00491](https://arxiv.org/abs/1804.00491)
 
