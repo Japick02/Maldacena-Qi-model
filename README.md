@@ -19,6 +19,7 @@ Numerical solver for large-N Schwinger-Dyson equations of SYK model.
   <img src="figures/Green_bJ50_SYK.png" width="48%" alt="Green_bJ50">
 </p>
 
+**File:** [Free_energy_SYK.ipynb](Free_energy_SYK.ipynb)
 
 Computation of Free Energy as a function of the temperature.
 
@@ -38,6 +39,7 @@ Numerical solver for large-N Schwinger-Dyson equations of MQ model.
   <img src="figures/Green_low_temp_MQ.png" width="48%" alt="Green_low_temp_MQ">
 </p>
 
+**File:** [Free_energy_MQ.ipynb](Free_energy_MQ.ipynb)
 
 Computation of Free Energy as a function of the temperature.
 
@@ -45,4 +47,15 @@ Computation of Free Energy as a function of the temperature.
   <img src="figures/Hysteresis_conf.png" width="60%" alt="Hysteresis_conf">
 </p>
 
+I used the notebook to collect data points and plot the Phase Diagram.
+
+<p align="center">
+  <img src="figures/Phase_diagram.png" width="60%" alt="Phase_diagram">
+</p>
+
 **References:** J. Maldacena, X.-L. Qi. *Eternal traversable wormhole* (2018): [arXiv:1804.00491](https://arxiv.org/abs/1804.00491)
+
+## Dependencies
+Python, NumPy, CuPy, Matplotlib
+
+
