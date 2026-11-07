@@ -32,7 +32,7 @@ Computation of Free Energy as a function of the temperature.
 ### 2. MQ SD solver and Free Energy computation
 **File:** [SYK_SD.ipynb](SYK_SD.ipynb)
 
-Numerical solver for large-N Schwinger-Dyson equations of MQ model.
+Numerical solver for large-N Schwinger-Dyson equations of MQ model. This is based on the SYK one.
 
 <p align="center">
   <img src="figures/Green_high_temp_MQ.png" width="48%" alt="Green_high_temp_MQ">
