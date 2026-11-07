@@ -4,7 +4,7 @@ In this project I developed a numerical solver for the large-N Schwinger-Dyson e
 
 I used the solvers to compute the large-N Free energy through saddle-point solutions as a function of the temperature. For what concerns MQ model, I simulated the cooling and a successive reheating of the system to reproduce the hysteresis cycle.  
 
-All the code is based on GPU acceleration, achieved using the CuPy library and it has been tested on NVIDIA RTX 5070.
+All the code is based on GPU acceleration, achieved using the CuPy library and it has been tested on NVIDIA RTX 5070. Substituting CuPy with NumPy library is sufficient to make the code run on CPU, but performance might get worse.
 
 ## Notebooks
 
