@@ -1,6 +1,6 @@
 # Maldacena-Qi model
 
-In this project I developed a numerical solver for the large-N Schwinger-Dyson equations of SYK and Maldacena-Qi models. The latter consists of two coupled SYK systems. Such solver is based on an iterative method. It makes use of Fast Fourier Transform and numerical techniques to deal with Gibbs problem and aliasing, arising from non-linearity of the equations.
+In this project I developed a numerical solver for the large-N Schwinger-Dyson equations at finite temperature of SYK and Maldacena-Qi models. The latter consists of two coupled SYK systems. Such solver is based on an iterative method. It makes use of Fast Fourier Transform and numerical techniques to deal with Gibbs problem and aliasing, arising from non-linearity of the equations.
 
 I used the solvers to compute the large-N Free energy through saddle-point solutions as a function of the temperature. For what concerns MQ model, I simulated the cooling and a successive reheating of the system to reproduce the hysteresis cycle.  
 
